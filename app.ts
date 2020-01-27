@@ -1,0 +1,1 @@
+type combinable=number|string
