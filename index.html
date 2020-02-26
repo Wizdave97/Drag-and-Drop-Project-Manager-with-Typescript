@@ -6,41 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ProjectManager</title>
     <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="css/tailwind.css">
     <script src="dist/app.js" defer></script>
   </head>
-  <body>
+  <body class=" w-full bg-gray-100">
     <template id="project-input">
-      <form>
+      <form class="max-w-full border-gray-500 border-2 p-5 rounded-lg mt-4 mb-4">
         <div class="form-control">
-          <label for="title">Title</label>
-          <input type="text" id="title"  />
+          <label for="title" class="text-gray-700 font-medium text-md">Title</label>
+          <input type="text" id="title" class=" w-full text-gray-700 font-medium rounded-sm text-md p-3"  />
         </div>
         <div class="form-control">
-          <label for="description">Description</label>
-          <textarea id="description" rows="3"></textarea>
+          <label for="description" class="text-gray-700 font-medium text-md">Description</label>
+          <textarea id="description" rows="3" class="w-full text-gray-700 font-medium rounded-sm text-md p-3"></textarea>
         </div>
         <div class="form-control">
-          <label for="people">People</label>
-          <input type="number" id="people" step="1" min="0" max="10" />
+          <label for="people" class="text-gray-700 font-medium text-md">People</label>
+          <input type="number" id="people" step="1" min="0" max="10" class="w-full p-3 rounded-sm text-gray-700 font-medium text-md" />
         </div>
-        <button type="submit">ADD PROJECT</button>
+        <button type="submit" class="bg-indigo-600 mt-2 max-w-full text-center text-gray-700 shadow-xl rounded-sm p-4">ADD PROJECT</button>
       </form>
     </template>
     <template id="single-project">
-      <li draggable="true">
-        <h2></h2>
-        <h3></h3>
-        <p></p>
+      <li draggable="true" class="xs:w-full sm:max-w-sm p-4 mb-3 mt-3 shadow-lg rounded-lg">
+        <h2 class="text-gray-800 font-bold text-lg p-2"></h2>
+        <h3 class="text-gray-800 font-bold text-sm p-2"></h3>
+        <p class="text-gray-600 font-normal text-xs p-3"></p>
       </li>
     </template>
     <template id="project-list">
-      <section class="projects">
-        <header>
-          <h2></h2>
+      <section class="projects w-full mt-3 mb-3 " >
+        <header class="w-full p-3">
+          <h2 class="text-gray-800 font-bold text-lg p-2"></h2>
         </header>
-        <ul></ul>
+        <ul class="w-full p-5"></ul>
       </section>
     </template>
-    <div id="app"></div>
+    <div id="app" class="xs:w-full sm:max-w-md md:max-w-lg border-gray-500  mx-auto">
+      <div class="max-w-full p-3 mt-2 mt-2 "><h1 class="text-center text-gray-800 font-bold text-xl uppercase">Project Manager</h1></div>
+    </div>
   </body>
 </html>

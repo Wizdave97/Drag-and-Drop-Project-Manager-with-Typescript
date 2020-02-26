@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon ./dist/app.js",
-    "serve":"lite-server"
+    "build": "postcss tailwind.css -o css/tailwind.css",
+    "start": "nodemon ./dist/app.js",
+    "serve": "lite-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0"
   }
 }
