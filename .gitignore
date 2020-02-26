@@ -1,2 +1,9 @@
 node_modules/**/*
 *.js
+src/advancedTypes.ts
+src/classes.ts
+src/decorators.ts
+src/functions.ts
+src/genericFunctions.ts
+src/gneric_classes.ts
+src/obj_arr_enum.ts
